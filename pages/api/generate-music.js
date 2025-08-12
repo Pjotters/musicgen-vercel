@@ -1,3 +1,5 @@
+console.log("HF_API_TOKEN:", process.env.HF_API_TOKEN ? "Present" : "Missing");
+
 import fetch from "node-fetch";
 
 export default async function handler(req, res) {
