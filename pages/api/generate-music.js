@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   if (!prompt) return res.status(400).json({ error: "Prompt is required" });
 
   try {
-    const response = await fetch("https://api-inference.huggingface.co/models/facebook/musicgen-medium", {
+const response = await fetch("https://api-inference.huggingface.co/models/riffusion/riffusion-model-v1", {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${process.env.HF_API_TOKEN}`,
